@@ -15,7 +15,7 @@ const LoginPage = (listSV) => {
     for (let i = 0; i < list.length; i++) {
       if (username === list[i].MSSV && password === list[i].password) {
         successNotification()
-        return navigate('/dashboard')
+        return navigate('/task1/dashboard')
       }     
     }
     errorNotification()
