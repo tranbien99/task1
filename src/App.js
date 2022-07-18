@@ -20,8 +20,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path='/' element={<LoginPage listSV={listSV}/>} />
-          <Route path='/dashboard' element={<Dashboard listSV={listSV}/>} />
+          <Route path='/task1' element={<LoginPage listSV={listSV}/>} />
+          <Route path='/task1/dashboard' element={<Dashboard listSV={listSV}/>} />
         </Routes>
       </Router>
     </div>
