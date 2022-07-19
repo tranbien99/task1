@@ -7,6 +7,18 @@
   font-family: 'Open Sans';
 }
 
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.form-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0.07636558041185226) 0%, rgba(203,7,159,0) 68%, rgba(255,0,0,0.3984944319524685) 100%);
+}
+
 .form-title {
   color: black;
   text-align: center;
@@ -19,7 +31,6 @@
   align-items: center;
   margin: 2rem 20rem 0 20rem;
   flex-direction: column;
-  border-bottom: 2px solid lavender;
 }
 
 .form-login__username {

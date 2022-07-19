@@ -21,12 +21,13 @@ const Dashboard = (listSV) => {
                   }}
                 dataSource={data}
                 renderItem={(item) => (
-                    <List.Item>
-                        <List.Item.Meta
-                            avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
-                            title={<a href="_blank">{item.name}</a>}
-                            description={"MSSV: " + item.MSSV + ' - ' + "Lớp: " + item.class}
-                        />
+                    <List.Item
+                        actions={[<a key="list-loadmore-edit" href="_blank">edit</a>, <a key="list-loadmore-more" href="_blank">more</a>]}>
+                            <List.Item.Meta
+                                avatar={<Avatar src="https://joeschmoe.io/api/v1/random" />}
+                                title={<a href="_blank">{item.name}</a>}
+                                description={"MSSV: " + item.MSSV + ' - ' + "Lớp: " + item.class}
+                            />
                     </List.Item>
                 )}
             />
