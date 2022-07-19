@@ -12,7 +12,7 @@ const Navbar = () => {
                     Dashboard
                 </Menu.Item>
                 <Menu.Item key="logout" icon={<LogoutOutlined />}>
-                    <Link to='/'>
+                    <Link to='/task1'>
                         Logout        
                     </Link>
                 </Menu.Item>
