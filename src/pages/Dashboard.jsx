@@ -13,6 +13,12 @@ const Dashboard = (listSV) => {
             <List
                 itemLayout="horizontal"
                 style={{ margin: 20 }}
+                pagination={{
+                    onChange: page => {
+                      console.log(page);
+                    },
+                    pageSize: 7
+                  }}
                 dataSource={data}
                 renderItem={(item) => (
                     <List.Item>
